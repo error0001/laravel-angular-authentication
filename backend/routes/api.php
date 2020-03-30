@@ -14,5 +14,5 @@ Route::group([
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
     Route::post('me', 'AuthController@me');
-
+    //Route::middleware('auth')->post('me', 'Auth\AuthController@me');
 });
